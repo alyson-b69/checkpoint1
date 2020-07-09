@@ -68,6 +68,7 @@ li {
     list-style-type: none;
     display:flex;
     justify-content:space-between;
+    font-size:0.6em;
 }
 
 form{
@@ -107,7 +108,19 @@ button{
 
     .rightpage, .leftpage{
         width:95%;
-        margin-bottom:2%;
+        margin-bottom:5%;
     }
 
+    li{
+        font-size:0.6em;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar a{
+        padding:0;
+        margin-top:2%;
+    }
   }
