@@ -40,7 +40,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 const renderFellows = fellows => {
   return fellows
     .map(fellow => {
-      return `<li><div>${fellow.name}</div><div>${fellow.payment} €</div></li>`;
+      return `<li><div>${fellow.name}</div><div>${fellow.payment.toLocaleString()} €</div></li>`;
     })
     .join("");
 
@@ -57,7 +57,7 @@ const getSold = fellows => {
   
 
   })
-    return `<li><div>Total</div><div class="soldTotal" id="soldTotal">${counter} €</div></li>`
+    return `<li><div>Total</div><div class="soldTotal" id="soldTotal">${counter.toLocaleString()} €</div></li>`
 }
 
 document.getElementById("soldList").innerHTML = getSold(fellows);
