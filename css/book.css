@@ -123,4 +123,8 @@ button{
         padding:0;
         margin-top:2%;
     }
+
+    .logo{
+        display:none;
+    }
   }
