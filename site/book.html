@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/book.css">
+    <title>Checkpoint Javascript 1</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <img src="image/logo.png" class="logo" alt="logo-wcs" />
+            <a href="index.html">Instructions</a>
+            <a href="book.html">Secret book</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="desktop">
+            <div class="wrapper">
+            <img  id="whisky" src="image/whisky.png" alt="a whisky glass" class="whisky" onClick="justOneFinger()"/>
+
+            <div class="pages">
+                <div class="page leftpage">
+                    <h1>Add a bribe</h1>
+                    <form id="myForm">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required/> 
+                    <label for="payment">Payment</label>
+                    <input type="number" name="payment" id="payment" required/> 
+                    <button type="submit">Pay</button>
+                    </form>
+                    <!-- TODO : Form -->
+                </div>
+
+                <div class="page rightpage">
+                    <!-- TODO : Display bribes and total payment -->
+                    <div class="sold">S</div>
+                    <div class="addition">
+                        <ul id="fellowList">
+                           
+                        </ul>
+                        <ul id="soldList">
+                            
+                        </ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            </div>
+            </section>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
